@@ -1802,6 +1802,18 @@ input[type="radio"]:checked ~ .box .circle background {
     width: 33.333333%;
   }
 
+  .lg\:w-\[50\%\] {
+    width: 50%;
+  }
+
+  .lg\:w-\[25\%\] {
+    width: 25%;
+  }
+
+  .lg\:w-\[40\%\] {
+    width: 40%;
+  }
+
   .lg\:max-w-full {
     max-width: 100%;
   }
