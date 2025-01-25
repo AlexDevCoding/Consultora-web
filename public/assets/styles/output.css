@@ -996,6 +996,10 @@ input[type="radio"]:checked ~ .box .circle background {
   max-width: 100%;
 }
 
+.max-w-\[160px\] {
+  max-width: 160px;
+}
+
 .-translate-x-1\/2 {
   --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1113,6 +1117,11 @@ input[type="radio"]:checked ~ .box .circle background {
   border-color: transparent;
 }
 
+.border-dark-3 {
+  --tw-border-opacity: 1;
+  border-color: rgb(55 65 81 / var(--tw-border-opacity, 1));
+}
+
 .bg-body-color {
   --tw-bg-opacity: 1;
   background-color: rgb(99 115 129 / var(--tw-bg-opacity, 1));
@@ -1143,6 +1152,11 @@ input[type="radio"]:checked ~ .box .circle background {
 
 .bg-white\/50 {
   background-color: rgb(255 255 255 / 0.5);
+}
+
+.bg-dark-2 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 42 55 / var(--tw-bg-opacity, 1));
 }
 
 .fill-current {
@@ -1233,6 +1247,11 @@ input[type="radio"]:checked ~ .box .circle background {
 .py-\[6px\] {
   padding-top: 6px;
   padding-bottom: 6px;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .pb-12 {
@@ -1356,6 +1375,11 @@ input[type="radio"]:checked ~ .box .circle background {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.text-dark-6 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity, 1));
 }
 
 .shadow {
@@ -1490,6 +1514,10 @@ input[type="radio"]:checked ~ .box .circle background {
 
   .sm\:w-1\/2 {
     width: 50%;
+  }
+
+  .sm\:w-2\/3 {
+    width: 66.666667%;
   }
 
   .sm\:max-w-\[70px\] {
@@ -1630,6 +1658,14 @@ input[type="radio"]:checked ~ .box .circle background {
     width: 100%;
   }
 
+  .lg\:w-3\/12 {
+    width: 25%;
+  }
+
+  .lg\:w-2\/12 {
+    width: 16.666667%;
+  }
+
   .lg\:max-w-full {
     max-width: 100%;
   }
@@ -1680,6 +1716,10 @@ input[type="radio"]:checked ~ .box .circle background {
     padding-top: 150px;
   }
 
+  .lg\:pt-\[100px\] {
+    padding-top: 100px;
+  }
+
   .lg\:text-right {
     text-align: right;
   }
@@ -1718,6 +1758,14 @@ input[type="radio"]:checked ~ .box .circle background {
 
   .xl\:w-6\/12 {
     width: 50%;
+  }
+
+  .xl\:w-2\/12 {
+    width: 16.666667%;
+  }
+
+  .xl\:w-3\/12 {
+    width: 25%;
   }
 
   .xl\:px-10 {
