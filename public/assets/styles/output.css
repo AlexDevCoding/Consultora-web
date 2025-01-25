@@ -1145,6 +1145,11 @@ input[type="radio"]:checked ~ .box .circle background {
   background-color: rgb(255 255 255 / 0.5);
 }
 
+.bg-dark-2 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 42 55 / var(--tw-bg-opacity, 1));
+}
+
 .fill-current {
   fill: currentColor;
 }
@@ -1356,6 +1361,11 @@ input[type="radio"]:checked ~ .box .circle background {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.text-dark-6 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity, 1));
 }
 
 .shadow {

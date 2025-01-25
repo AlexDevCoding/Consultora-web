@@ -12,7 +12,7 @@
   <title>Document</title>
 </head>
 
-<body class="dark:bg-dark">
+<body class="bg-dark">
   <!-- ====== Navbar Section Start -->
   <header x-data="
    {
@@ -22,38 +22,35 @@
     <div class="container mx-auto">
       <div class="relative flex items-center justify-between -mx-4">
         <div class="w-60 h-16 flex items-center justify-center">
-          <img src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo.svg" alt="logo"
-            class="block w-full h-full object-contain dark:hidden" />
-          <a href=""></a>
-          <img src="./assets/img/2-Photoroom.png" alt="logo" class="hidden w-full h-auto object-contain dark:block" />
+          <img src="./assets/img/2-Photoroom.png" alt="logo" class="w-full h-auto object-contain" />
         </div>
 
         <div class="flex items-center justify-between w-full px-4">
           <div>
             <button @click="navbarOpen = !navbarOpen" :class="navbarOpen && 'navbarTogglerActive'" id="navbarToggler"
               class="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden">
-              <span class="relative my-[6px] block h-[2px] w-[30px] bg-body-color dark:bg-white"></span>
-              <span class="relative my-[6px] block h-[2px] w-[30px] bg-body-color dark:bg-white"></span>
-              <span class="relative my-[6px] block h-[2px] w-[30px] bg-body-color dark:bg-white"></span>
+              <span class="relative my-[6px] block h-[2px] w-[30px] bg-body-color"></span>
+              <span class="relative my-[6px] block h-[2px] w-[30px] bg-body-color"></span>
+              <span class="relative my-[6px] block h-[2px] w-[30px] bg-body-color"></span>
             </button>
             <nav x-transition :class="!navbarOpen && 'hidden'" id="navbarCollapse"
-              class="absolute right-4 top-full w-full max-w-[250px] rounded-lg bg-white dark:bg-dark-2 py-5 px-6 shadow transition-all lg:static lg:bg-transparent lg:dark:bg-transparent lg:block lg:w-full lg:max-w-full lg:shadow-none xl:ml-11">
+              class="absolute right-4 top-full w-full max-w-[250px] rounded-lg bg-dark-2 py-5 px-6 shadow transition-all lg:static lg:bg-transparent lg:block lg:w-full lg:max-w-full lg:shadow-none xl:ml-11">
               <ul class="block lg:flex">
                 <li>
                   <a href="javascript:void(0)"
-                    class="flex py-2 text-base font-medium text-dark dark:text-white hover:text-primary lg:ml-10 lg:inline-flex">
+                    class="flex py-2 text-base font-medium text-white hover:text-primary lg:ml-10 lg:inline-flex">
                     Inicio
                   </a>
                 </li>
                 <li>
                   <a href="javascript:void(0)"
-                    class="flex py-2 text-base font-medium text-dark dark:text-white hover:text-primary lg:ml-10 lg:inline-flex">
+                    class="flex py-2 text-base font-medium text-white hover:text-primary lg:ml-10 lg:inline-flex">
                     Sobre Nosotros
                   </a>
                 </li>
                 <li>
                   <a href="javascript:void(0)"
-                    class="flex py-2 text-base font-medium text-dark dark:text-white hover:text-primary lg:ml-10 lg:inline-flex">
+                    class="flex py-2 text-base font-medium text-white hover:text-primary lg:ml-10 lg:inline-flex">
                     Portafolio
                   </a>
                 </li>
@@ -76,18 +73,18 @@
   <main>
 
     <section class="py-4">
-      <div class="relative bg-white dark:bg-dark pt-[120px] pb-[110px] lg:pt-[150px]">
+      <div class="relative bg-dark pt-[120px] pb-[110px] lg:pt-[150px]">
         <div class="container mx-auto">
           <div class="flex flex-wrap items-center -mx-4">
             <div class="w-full px-4 lg:w-5/12">
               <div class="hero-content">
                 <h1
-                  class="mb-5 text-4xl font-bold !leading-[1.208] text-dark dark:text-white sm:text-[42px] lg:text-[40px] xl:text-5xl">
+                  class="mb-5 text-4xl font-bold !leading-[1.208] text-white sm:text-[42px] lg:text-[40px] xl:text-5xl">
                   Empieza tu camino <br />
                   hacia el éxito digital. <br />
 
                 </h1>
-                <p class="mb-8 max-w-[480px] text-base text-body-color dark:text-dark-6">
+                <p class="mb-8 max-w-[480px] text-base text-body-color">
                   Con Blue Codes, transformamos ideas en experiencias digitales impresionantes. Nos especializamos en el
                   desarrollo de sitios web modernos, funcionales y personalizados que hacen crecer tu negocio en línea.
                   Déjanos llevar tu proyecto al siguiente nivel con soluciones innovadoras y un enfoque centrado en tus
@@ -154,7 +151,7 @@
 
 
     <!-- ====== Services Section Start -->
-    <section class=" pb-12 ] lg:pb-[90px] dark:bg-dark">
+    <section class=" pb-12 lg:pb-[90px] bg-dark">
       <div class="container mx-auto">
         <div class="-mx-4 flex flex-wrap">
           <div class="w-full px-4">
@@ -162,10 +159,10 @@
               <span class="text-primary mb-2 block text-lg font-semibold">
                 Nuestros Servicios
               </span>
-              <h2 class="text-dark dark:text-white mb-3 text-3xl leading-[1.2] font-bold sm:text-4xl md:text-[40px]">
+              <h2 class="text-white mb-3 text-3xl leading-[1.2] font-bold sm:text-4xl md:text-[40px]">
                 Que Ofrecemos
               </h2>
-              <p class="text-body-color text-base dark:text-dark-6">
+              <p class="text-body-color text-base">
                 There are many variations of passages of Lorem Ipsum available
                 but the majority have suffered alteration in some form.
               </p>
@@ -174,7 +171,7 @@
         </div>
         <div class="-mx-4 flex flex-wrap">
           <div class="w-full px-4 md:w-1/2 lg:w-1/3">
-            <div class="mb-9 rounded-[20px] bg-white dark:bg-dark-2 p-10 h-[350px] shadow-2 hover:shadow-lg md:px-7 xl:px-10">
+            <div class="mb-9 rounded-[20px] bg-dark-2 p-10 h-[350px] shadow-2 hover:shadow-lg md:px-7 xl:px-10">
               <div class="bg-primary mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl">
                 <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -182,16 +179,16 @@
                     fill="white" />
                 </svg>
               </div>
-              <h4 class="text-dark dark:text-white mb-[14px] text-2xl font-semibold">
+              <h4 class="text-white mb-[14px] text-2xl font-semibold">
                 Desarrollo Web Personalizado
               </h4>
-              <p class="text-body-color dark:text-dark-6">
+              <p class="text-body-color">
                 Creamos webs a medida, adaptados a tus necesidades, con tecnología de vanguardia para máximo rendimiento y experiencia de usuario.
               </p>
             </div>
           </div>
           <div class="w-full px-4 md:w-1/2 lg:w-1/3">
-            <div class="mb-9 rounded-[20px] bg-white dark:bg-dark-2 p-10 h-[350px] shadow-2 hover:shadow-lg md:px-7 xl:px-10">
+            <div class="mb-9 rounded-[20px] bg-dark-2 p-10 h-[350px] shadow-2 hover:shadow-lg md:px-7 xl:px-10">
               <div class="bg-primary mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl">
                 <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -199,10 +196,10 @@
                     fill="white" />
                 </svg>
               </div>
-              <h4 class="text-dark dark:text-white mb-[14px] text-2xl font-semibold">
+              <h4 class="text-white mb-[14px] text-2xl font-semibold">
                 Diseño Responsivo
               </h4>
-              <p class="text-body-color dark:text-dark-6">
+              <p class="text-body-color">
                 Diseñamos webs que funcionan perfectamente en todos los dispositivos: desktop, tablets y móviles.
               </p>
             </div>
@@ -212,7 +209,7 @@
 
 
           <div class="w-full px-4 md:w-1/2 lg:w-1/3">
-            <div class="mb-9 rounded-[20px] bg-white dark:bg-dark-2 p-10 h-[350px] shadow-2 hover:shadow-lg md:px-7 xl:px-10">
+            <div class="mb-9 rounded-[20px] bg-dark-2 p-10 h-[350px] shadow-2 hover:shadow-lg md:px-7 xl:px-10">
               <div class="bg-primary mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl">
                 <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -223,10 +220,10 @@
                     fill="white" />
                 </svg>
               </div>
-              <h4 class="text-dark dark:text-white mb-[14px] text-2xl font-semibold">
+              <h4 class="text-white mb-[14px] text-2xl font-semibold">
                 Optimización de Velocidad
               </h4>
-              <p class="text-body-color dark:text-dark-6">
+              <p class="text-body-color">
                 Mejoramos la velocidad de carga de tu web, optimizando la experiencia de usuario y el posicionamiento SEO.
               </p>
             </div>
@@ -241,7 +238,7 @@
 
 
     <!-- ====== About Section Start -->
-    <section class="overflow-hidden pb-12 bg-white dark:bg-dark">
+    <section class="overflow-hidden pb-12 bg-dark">
       <div class="container mx-auto">
         <div class="flex flex-wrap items-center justify-between -mx-4">
           <div class="w-full px-4 lg:w-6/12">
@@ -402,15 +399,15 @@
               <span class="block mb-4 text-lg font-semibold text-primary">
                 ¿Por qué elegirnos?
               </span>
-              <h2 class="mb-5 text-3xl font-bold text-dark dark:text-white sm:text-[40px]/[48px]">
+              <h2 class="mb-5 text-3xl font-bold text-white sm:text-[40px]/[48px]">
                 Tu presencia digital comienza con un sitio web diseñado para el éxito.
               </h2>
-              <p class="mb-5 text-base text-body-color dark:text-dark-6">
+              <p class="mb-5 text-base text-body-color">
                 Nos especializamos en crear páginas web optimizadas para ofrecer una experiencia de usuario excepcional
                 y mejorar tu posicionamiento en los motores de búsqueda. Cada sitio que desarrollamos está pensado para
                 ser visualmente atractivo, rápido y totalmente funcional.
               </p>
-              <p class="mb-8 text-base text-body-color dark:text-dark-6">
+              <p class="mb-8 text-base text-body-color">
                 Además, implementamos estrategias de SEO personalizadas para aumentar tu visibilidad online. Desde la
                 investigación de palabras clave hasta la optimización técnica, nos aseguramos de que tu página web no
                 solo destaque, sino que también sea fácil de encontrar por tu público objetivo.
@@ -424,8 +421,7 @@
         </div>
       </div>
     </section>
-
-
+    <!-- ====== About Section End -->
 
     <section>
 
@@ -439,8 +435,8 @@
         <!-- Header Section -->
         <div class="text-center mb-12">
           <h3 class="text-primary  font-medium text-lg mb-2">Nuestro Portafolio</h3>
-          <h2 class="text-4xl font-bold mb-4 text-dark dark:text-white">Nuestros Proyectos Recientes</h2>
-          <p class="text-muted-foreground text-body-color dark:text-dark-6">
+          <h2 class="text-4xl font-bold mb-4 text-white">Nuestros Proyectos Recientes</h2>
+          <p class="text-muted-foreground text-body-color">
             Nuestros proyectos recientes muestran nuestra capacidad para crear soluciones digitales personalizadas,
             adaptadas a las necesidades específicas de cada cliente, combinando funcionalidad y diseño atractivo.
           </p>
@@ -512,7 +508,7 @@
 
 
     <!-- ====== Contact Section Start -->
-    <section class="relative z-10 overflow-hidden bg-white dark:bg-dark py-20 lg:py-[120px]">
+    <section class="relative z-10 overflow-hidden bg-dark py-20 lg:py-[120px]">
       <div class="container mx-auto">
         <div class="flex flex-wrap -mx-4 lg:justify-between">
           <div class="w-full px-4 lg:w-1/2 xl:w-6/12">
@@ -520,11 +516,10 @@
               <span class="block mb-4 text-base font-semibold text-primary">
                 Contáctanos
               </span>
-              <h2
-                class="text-dark dark:text-white mb-6 text-[32px] font-bold uppercase sm:text-[40px] lg:text-[36px] xl:text-[40px]">
+              <h2 class="text-white mb-6 text-[32px] font-bold uppercase sm:text-[40px] lg:text-[36px] xl:text-[40px]">
                 PONTE EN CONTACTO
               </h2>
-              <p class="text-base leading-relaxed text-body-color dark:text-dark-6 mb-9">
+              <p class="text-base leading-relaxed text-body-color mb-9">
                 ¿Listo para llevar tu presencia en línea al siguiente nivel? En Blue Codes, estamos aquí
                 para ayudarte a crear sitios web impresionantes y funcionales que se adapten a tus necesidades. ¡No
                 dudes en contactarnos!
@@ -542,10 +537,10 @@
                   </svg>
                 </div>
                 <div class="w-full">
-                  <h4 class="mb-1 text-xl font-bold text-dark dark:text-white">
+                  <h4 class="mb-1 text-xl font-bold text-white">
                     Email Address
                   </h4>
-                  <p class="text-base text-body-color dark:text-dark-6">
+                  <p class="text-base text-body-color">
                     info@yourdomain.com
                   </p>
                 </div>
@@ -553,23 +548,23 @@
             </div>
           </div>
           <div class="w-full px-4 lg:w-1/2 xl:w-5/12">
-            <div class="relative p-8 bg-white rounded-lg shadow-lg dark:bg-dark-2 sm:p-12">
+            <div class="relative p-8 bg-dark-2 rounded-lg shadow-lg">
               <form>
                 <div class="mb-6">
                   <input type="text" placeholder="Tu Nombre"
-                    class="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none" />
+                    class="border-stroke text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none bg-dark-2" />
                 </div>
                 <div class="mb-6">
                   <input type="email" placeholder="Tu Correo"
-                    class="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none" />
+                    class="border-stroke text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none bg-dark-2" />
                 </div>
                 <div class="mb-6">
                   <input type="text" placeholder="Tu Teléfono"
-                    class="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none" />
+                    class="border-stroke text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none bg-dark-2" />
                 </div>
                 <div class="mb-6">
                   <textarea rows="6" placeholder="Tu Mensaje"
-                    class="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full resize-none rounded border py-3 px-[14px] text-base outline-none"></textarea>
+                    class="border-stroke text-body-color focus:border-primary w-full resize-none rounded border py-3 px-[14px] text-base outline-none bg-dark-2"></textarea>
                 </div>
                 <div>
                   <button type="submit"
@@ -772,22 +767,21 @@
 
 
     <!-- ====== Footer Section Start -->
-    <footer class="relative z-10 bg-white dark:bg-dark pt-20 lg:pt-[120px] lg:pb-20">
+    <footer class="relative z-10 bg-dark pt-20 lg:pt-[120px] lg:pb-20">
       <div class="container mx-auto">
         <div class="flex flex-wrap -mx-4">
           <div class="w-full px-4 sm:w-1/2 lg:w-[40%] relative bottom-[75px]">
             <div class="w-full ">
 
-              <img src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo.svg" alt="logo"
-                class="max-w-full dark:hidden" />
+              <img src="./assets/img/2-Photoroom.png" alt="logo" class="max-w-full w-[200px]" />
               <img src="./assets/img/2-Photoroom.png" alt="logo"
-                class="max-w-full hidden dark:block  w-[200px] " />
+                class="max-w-full hidden w-[200px] " />
 
-              <p class="text-base text-body-color dark:text-dark-6 mb-7 relative bottom-4">
+              <p class="text-base text-body-color mb-7 relative bottom-4">
                 Con Blue Codes, transformamos ideas en experiencias digitales impresionantes. Nos especializamos en el
                 desarrollo de sitios web modernos, funcionales y personalizados.
               </p>
-              <p class="flex items-center text-sm font-medium text-dark dark:text-white">
+              <p class="flex items-center text-sm font-medium text-white">
                 <span class="mr-3 text-primary">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_941_15626)">
@@ -815,31 +809,31 @@
 
           <div class="w-full px-4 sm:w-1/2 lg:w-4/12 lg:pl-[120px]">
             <div class="w-full mb-10">
-              <h4 class="text-lg font-semibold text-dark dark:text-white mb-9">
+              <h4 class="text-lg font-semibold text-white mb-9">
                 Company
               </h4>
               <ul class="space-y-3">
                 <li>
                   <a href="javascript:void(0)"
-                    class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6">
+                    class="inline-block text-base leading-loose text-body-color hover:text-primary">
                     About TailGrids
                   </a>
                 </li>
                 <li>
                   <a href="javascript:void(0)"
-                    class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6">
+                    class="inline-block text-base leading-loose text-body-color hover:text-primary">
                     Contact & Support
                   </a>
                 </li>
                 <li>
                   <a href="javascript:void(0)"
-                    class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6">
+                    class="inline-block text-base leading-loose text-body-color hover:text-primary">
                     Success History
                   </a>
                 </li>
                 <li>
                   <a href="javascript:void(0)"
-                    class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6">
+                    class="inline-block text-base leading-loose text-body-color hover:text-primary">
                     Setting & Privacy
                   </a>
                 </li>
@@ -849,19 +843,19 @@
 
           <div class="w-full px-4 sm:w-1/2 lg:w-[25%] lg:pl-[120px]">
             <div class="w-full mb-10">
-              <h4 class="text-lg font-semibold text-dark dark:text-white mb-9">
+              <h4 class="text-lg font-semibold text-white mb-9">
                 Follow Us On
               </h4>
               <div class="flex items-center mb-6">
                 <a href="javascript:void(0)"
-                  class="flex items-center justify-center w-8 h-8 mr-3 border rounded-full text-dark hover:border-primary hover:bg-primary border-stroke dark:border-dark-3 dark:hover:border-primary dark:text-white hover:text-white sm:mr-4 lg:mr-3 xl:mr-4">
+                  class="flex items-center justify-center w-8 h-8 mr-3 border rounded-full text-white hover:border-primary hover:bg-primary border-stroke dark:border-dark-3 dark:hover:border-primary sm:mr-4 lg:mr-3 xl:mr-4">
                   <svg width="8" height="16" viewBox="0 0 8 16" class="fill-current">
                     <path
                       d="M7.43902 6.4H6.19918H5.75639V5.88387V4.28387V3.76774H6.19918H7.12906C7.3726 3.76774 7.57186 3.56129 7.57186 3.25161V0.516129C7.57186 0.232258 7.39474 0 7.12906 0H5.51285C3.76379 0 2.54609 1.44516 2.54609 3.5871V5.83226V6.34839H2.10329H0.597778C0.287819 6.34839 0 6.63226 0 7.04516V8.90323C0 9.26452 0.243539 9.6 0.597778 9.6H2.05902H2.50181V10.1161V15.3032C2.50181 15.6645 2.74535 16 3.09959 16H5.18075C5.31359 16 5.42429 15.9226 5.51285 15.8194C5.60141 15.7161 5.66783 15.5355 5.66783 15.3806V10.1419V9.62581H6.13276H7.12906C7.41688 9.62581 7.63828 9.41935 7.68256 9.10968V9.08387V9.05806L7.99252 7.27742C8.01466 7.09677 7.99252 6.89032 7.85968 6.68387C7.8154 6.55484 7.61614 6.42581 7.43902 6.4Z" />
                   </svg>
                 </a>
                 <a href="javascript:void(0)"
-                  class="flex items-center justify-center w-8 h-8 mr-3 border rounded-full text-dark hover:border-primary hover:bg-primary border-stroke dark:border-dark-3 dark:hover:border-primary dark:text-white hover:text-white sm:mr-4 lg:mr-3 xl:mr-4">
+                  class="flex items-center justify-center w-8 h-8 mr-3 border rounded-full text-white hover:border-primary hover:bg-primary border-stroke dark:border-dark-3 dark:hover:border-primary sm:mr-4 lg:mr-3 xl:mr-4">
                   <svg width="20" height="18" viewBox="0 0 24 24" fill="fill-current" class="text-white"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -875,14 +869,14 @@
 
                 </a>
                 <a href="javascript:void(0)"
-                  class="flex items-center justify-center w-8 h-8 mr-3 border rounded-full text-dark hover:border-primary hover:bg-primary border-stroke dark:border-dark-3 dark:hover:border-primary dark:text-white hover:text-white sm:mr-4 lg:mr-3 xl:mr-4">
+                  class="flex items-center justify-center w-8 h-8 mr-3 border rounded-full text-white hover:border-primary hover:bg-primary border-stroke dark:border-dark-3 dark:hover:border-primary sm:mr-4 lg:mr-3 xl:mr-4">
                   <svg width="16" height="12" viewBox="0 0 16 12" class="fill-current">
                     <path
                       d="M15.6645 1.88018C15.4839 1.13364 14.9419 0.552995 14.2452 0.359447C13.0065 6.59222e-08 8 0 8 0C8 0 2.99355 6.59222e-08 1.75484 0.359447C1.05806 0.552995 0.516129 1.13364 0.335484 1.88018C0 3.23502 0 6 0 6C0 6 0 8.79263 0.335484 10.1198C0.516129 10.8664 1.05806 11.447 1.75484 11.6406C2.99355 12 8 12 8 12C8 12 13.0065 12 14.2452 11.6406C14.9419 11.447 15.4839 10.8664 15.6645 10.1198C16 8.79263 16 6 16 6C16 6 16 3.23502 15.6645 1.88018ZM6.4 8.57143V3.42857L10.5548 6L6.4 8.57143Z" />
                   </svg>
                 </a>
                 <a href="javascript:void(0)"
-                  class="flex items-center justify-center w-8 h-8 mr-3 border rounded-full text-dark hover:border-primary hover:bg-primary border-stroke dark:border-dark-3 dark:hover:border-primary dark:text-white hover:text-white sm:mr-4 lg:mr-3 xl:mr-4">
+                  class="flex items-center justify-center w-8 h-8 mr-3 border rounded-full text-white hover:border-primary hover:bg-primary border-stroke dark:border-dark-3 dark:hover:border-primary sm:mr-4 lg:mr-3 xl:mr-4">
                   <svg width="14" height="14" viewBox="0 0 14 14" class="fill-current">
                     <path
                       d="M13.0214 0H1.02084C0.453707 0 0 0.451613 0 1.01613V12.9839C0 13.5258 0.453707 14 1.02084 14H12.976C13.5432 14 13.9969 13.5484 13.9969 12.9839V0.993548C14.0422 0.451613 13.5885 0 13.0214 0ZM4.15142 11.9H2.08705V5.23871H4.15142V11.9ZM3.10789 4.3129C2.42733 4.3129 1.90557 3.77097 1.90557 3.11613C1.90557 2.46129 2.45002 1.91935 3.10789 1.91935C3.76577 1.91935 4.31022 2.46129 4.31022 3.11613C4.31022 3.77097 3.81114 4.3129 3.10789 4.3129ZM11.9779 11.9H9.9135V8.67097C9.9135 7.90323 9.89082 6.8871 8.82461 6.8871C7.73571 6.8871 7.57691 7.74516 7.57691 8.60323V11.9H5.51254V5.23871H7.53154V6.16452H7.55423C7.84914 5.62258 8.50701 5.08065 9.52785 5.08065C11.6376 5.08065 12.0232 6.43548 12.0232 8.2871V11.9H11.9779Z" />
