@@ -3,7 +3,7 @@
     "tailwindcss": "^3.4.17"
   },
   "scripts": {
-    "purga": "npx tailwindcss -i ./src/styles/tailwind.css -o ./src/styles/output.css --watch"
+    "purga": "npx tailwindcss -i ./public/assets/styles/tailwind.css -o ./public/assets/styles/output.css --watch"
   },
   "dependencies": {
     "tailgrids": "^2.2.7"
