@@ -431,9 +431,11 @@
 
       <div
         x-data="{ currentSlide: 0, projects: 
-        [{ id: 1, title: 'Best Web Design & Development in 2023', category: 'Web Design', description: 'There are many variations of Lorem Ipsum available, but the majority have suffered alteration in some form. If you are going to use a passage of Lorem Ipsum, you need to be sure.', image: '/placeholder.svg?height=600&width=800' }, 
-        { id: 2, title: 'Modern UI/UX Design Trends', category: 'UI/UX Design', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', image: '/placeholder.svg?height=600&width=800' }, 
-        { id: 3, title: 'Comercio Electrónico', category: 'Ecommerce ', description: 'Plataforma de comercio electrónico diseñada para la venta de videojuegos y productos digitales, con una interfaz moderna, atractiva y funcional que ofrece una experiencia de usuario fluida y eficiente.', image:  'assets/img/proyecto1.png' } ] }"
+ 
+        [{ { id: 1, title: 'Sistema de Reservas Para la Barberia', category: 'Sistema de Reservas', description: 'Plataforma web para una barbería moderna con un diseño atractivo y funcional. Incluye un carrusel interactivo, secciones organizadas de servicios y un sistema de reservas intuitivo.', image: './assets/img/barberia-demo01.netlify.apps (1).jpg' }, 
+        { id: 2, title: 'Comercio Electrónico', category: 'Ecommerce ', description: 'Plataforma de comercio electrónico diseñada para la venta de videojuegos y productos digitales, con una interfaz moderna, atractiva y funcional que ofrece una experiencia de usuario fluida y eficiente.', image:  'assets/img/proyecto1.png' } ] }"
+
+        
         class="w-[full] max-w-6xl mx-auto px-4 py-12">
 
         <!-- Header Section -->
@@ -549,21 +551,21 @@
           </div>
           <div class="w-full px-4 lg:w-1/2 xl:w-5/12">
             <div class="relative p-8 bg-dark-2 rounded-lg shadow-lg sm:p-12">
-              <form>
+              <form action="https://formspree.io/f/xkgovnvp" method="POST">
                 <div class="mb-6">
-                  <input type="text" placeholder="Nombre"
+                  <input type="text" placeholder="Nombre" name="name"
                     class="border-dark-3 text-dark-6 bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none" />
                 </div>
                 <div class="mb-6">
-                  <input type="email" placeholder="Correo"
+                  <input type="email" placeholder="Correo" name="email"
                     class="border-dark-3 text-dark-6 bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none" />
                 </div>
                 <div class="mb-6">
-                  <input type="text" placeholder="Teléfono"
+                  <input type="text" placeholder="Teléfono" name="phone"
                     class="border-dark-3 text-dark-6 bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none" />
                 </div>
                 <div class="mb-6">
-                  <textarea rows="6" placeholder="Mensaje"
+                  <textarea rows="6" placeholder="Mensaje" name="text"
                     class="border-dark-3 text-dark-6 bg-dark text-body-color focus:border-primary w-full resize-none rounded border py-3 px-[14px] text-base outline-none"></textarea>
                 </div>
                 <div>
@@ -836,7 +838,7 @@
           <div class="w-full px-4 sm:w-1/2 lg:w-[25%] lg:pl-[120px]">
             <div class="w-full mb-10">
               <h4 class="text-lg font-semibold text-white mb-9">
-                Follow Us On
+                Siguenos en 
               </h4>
               <div class="flex items-center mb-6">
                 <a href="https://web.facebook.com/profile.php?id=61565644435282"
