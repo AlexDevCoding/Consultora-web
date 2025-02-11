@@ -433,7 +433,7 @@
         x-data="{ currentSlide: 0, projects: 
         [{ id: 1, title: 'Best Web Design & Development in 2023', category: 'Web Design', description: 'There are many variations of Lorem Ipsum available, but the majority have suffered alteration in some form. If you are going to use a passage of Lorem Ipsum, you need to be sure.', image: '/placeholder.svg?height=600&width=800' }, 
         { id: 2, title: 'Modern UI/UX Design Trends', category: 'UI/UX Design', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', image: '/placeholder.svg?height=600&width=800' }, 
-        { id: 3, title: 'Comercio Electrónico', category: 'Ecommerce para Venta de Videojuegos', description: 'Plataforma de comercio electrónico diseñada para la venta de videojuegos y productos digitales, con una interfaz moderna, atractiva y funcional que ofrece una experiencia de usuario fluida y eficiente.', image:  'assets/img/proyecto1.png' } ] }"
+        { id: 3, title: 'Comercio Electrónico', category: 'Ecommerce ', description: 'Plataforma de comercio electrónico diseñada para la venta de videojuegos y productos digitales, con una interfaz moderna, atractiva y funcional que ofrece una experiencia de usuario fluida y eficiente.', image:  'assets/img/proyecto1.png' } ] }"
         class="w-[full] max-w-6xl mx-auto px-4 py-12">
 
         <!-- Header Section -->
@@ -454,19 +454,17 @@
                 <div x-show="currentSlide === index" class="absolute inset-0 grid grid-cols-2">
                   <!-- Left side content -->
                   <div class="bg-primary p-20 flex flex-col justify-center">
-                    <div class="text-sm text-primary-foreground/80 mb-2">
+                    <div class="text-sm text-white mb-2 transition-transform duration-300 hover:scale-105" style="font-family: 'Poppins', sans-serif; padding: 10px 15px; margin: 10px 0; background: linear-gradient(135deg, #4A90E2, #50E3C2); border-radius: 8px;">
                       <span x-text="project.category"></span>
                     </div>
-                    <h3 class="text-2xl md:text-3xl font-bold text-primary-foreground mb-4" x-text="project.title"></h3>
-                    <p class="text-primary-foreground/90 mb-6" x-text="project.description"></p>
-                    <button
-                      class="inline-flex items-center text-primary-foreground hover:opacity-80 transition-opacity">
-                      Ver Detalles
-                      <svg class="ml-2 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor" stroke-width="2">
+                    <h3 class="text-2xl md:text-3xl font-bold text-primary-foreground mb-4 transition-transform duration-300 hover:scale-105" x-text="project.title" style="font-family: 'Montserrat', sans-serif; color: #d3dde9; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); letter-spacing: 1px;"></h3>
+                    <p class="text-primary-foreground/90 mb-6 transition-transform duration-300 hover:scale-105" x-text="project.description" style="font-family: 'Arial', sans-serif; color: #f3f3f3; line-height: 1.6; padding: 10px; margin: 10px 0; border-left: 4px solid #4A90E2;"></p>
+                    <a href="#" class="inline-flex items-center text-white bg-gradient-to-r from-blue-500 to-teal-500 hover:from-blue-600 hover:to-teal-600 transition duration-300 ease-in-out px-4 py-2 rounded-lg shadow-md">
+                      Demo
+                      <svg class="ml-2 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
                       </svg>
-                    </button>
+                    </a>
                   </div>
                   <!-- Right side image -->
                   <div class="relative">
@@ -505,9 +503,6 @@
           </div>
         </div>
       </div>
-
-
-
     </section>
 
 
