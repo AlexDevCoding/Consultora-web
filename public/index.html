@@ -448,7 +448,21 @@
                 description: 'Plataforma de comercio electrónico diseñada para la venta de videojuegos y productos digitales, con una interfaz moderna, atractiva y funcional que ofrece una experiencia de usuario fluida y eficiente.', 
                 image: 'assets/img/proyecto1.png',
                 url: 'https://chat.deepseek.com'
-            }
+            },{ 
+              id: 3, 
+              title: 'Menú Digital ', 
+              category: 'Menú Digital ', 
+              description: 'Plataforma de comercio electrónico diseñada para la venta de videojuegos y productos digitales, con una interfaz moderna, atractiva y funcional que ofrece una experiencia de usuario fluida y eficiente.', 
+              image: 'assets/img/menu-digital.png',
+              url: 'https://chat.deepseek.com'
+          },{ 
+            id: 4, 
+            title: 'Sistema de reseva', 
+            category: 'Sistema de reseva', 
+            description: 'Plataforma de comercio electrónico diseñada para la venta de videojuegos y productos digitales, con una interfaz moderna, atractiva y funcional que ofrece una experiencia de usuario fluida y eficiente.', 
+            image: 'assets/img/Reserva.png',
+            url: 'https://chat.deepseek.com'
+        }
         ] 
     }"
     class="w-full max-w-6xl mx-auto px-4 py-12">
@@ -487,8 +501,17 @@
                     </a>
                   </div>
                   <!-- Right side image -->
-                  <div class="relative">
-                    <img :src="project.image" :alt="project.title" class="w-full h-full object-cover rounded-r-2xl" />
+                  <div class="relative aspect-video overflow-hidden rounded-r-2xl shadow-lg transition-all duration-300 hover:shadow-xl">
+                    <img 
+                      :src="project.image"
+                      :alt="project.title || 'Imagen del proyecto'"
+                      class="h-full w-full object-cover object-center transition-transform duration-300 hover:scale-105"
+                      loading="lazy"
+                      role="img"
+                      @error="handleImageError"
+                    >
+                    <!-- Optional: Gradient overlay -->
+                    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/30 to-transparent"></div>
                   </div>
                 </div>
               </template>
