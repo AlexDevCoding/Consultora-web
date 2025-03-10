@@ -176,13 +176,6 @@ body {
   /* 2 */
 }
 
-* {
-
-
-  scroll-behavior: smooth;
-  }
-  
-
 /*
 1. Add the correct height in Firefox.
 2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
@@ -590,6 +583,31 @@ input[type="radio"]:checked ~ .box .circle background {
   -d-e-f-a-u-l-t: #3758F9;
 }
 
+.download-radio:checked ~ label .icon {
+  opacity: 1;
+}
+
+.checkbox-list:checked ~ label .icon {
+  opacity: 1;
+}
+
+.box-select-1:checked ~ label .box .icon {
+  opacity: 1;
+}
+
+.select-list:checked ~ label .icon background {
+  -d-e-f-a-u-l-t: #3758F9;
+}
+
+.tableCheckbox:checked ~ label .icon {
+  opacity: 1;
+}
+
+.tableCheckbox-2:checked ~ label .icon {
+  color: #fff;
+  opacity: 1;
+}
+
 .container {
   width: 100%;
   margin-right: auto;
@@ -650,10 +668,6 @@ input[type="radio"]:checked ~ .box .circle background {
   position: relative;
 }
 
-.inset-0 {
-  inset: 0px;
-}
-
 .-bottom-7 {
   bottom: -1.75rem;
 }
@@ -700,14 +714,6 @@ input[type="radio"]:checked ~ .box .circle background {
 
 .left-0 {
   left: 0px;
-}
-
-.left-1\/2 {
-  left: 50%;
-}
-
-.left-4 {
-  left: 1rem;
 }
 
 .right-10 {
@@ -760,6 +766,11 @@ input[type="radio"]:checked ~ .box .circle background {
   margin-right: -1rem;
 }
 
+.mx-7 {
+  margin-left: 1.75rem;
+  margin-right: 1.75rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -773,6 +784,10 @@ input[type="radio"]:checked ~ .box .circle background {
 .my-\[6px\] {
   margin-top: 6px;
   margin-bottom: 6px;
+}
+
+.-mt-20 {
+  margin-top: -5rem;
 }
 
 .mb-1 {
@@ -823,8 +838,8 @@ input[type="radio"]:checked ~ .box .circle background {
   margin-bottom: 14px;
 }
 
-.ml-2 {
-  margin-left: 0.5rem;
+.mb-\[60px\] {
+  margin-bottom: 60px;
 }
 
 .mr-3 {
@@ -837,6 +852,10 @@ input[type="radio"]:checked ~ .box .circle background {
 
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.mb-\[20px\] {
+  margin-bottom: 20px;
 }
 
 .block {
@@ -859,36 +878,12 @@ input[type="radio"]:checked ~ .box .circle background {
   display: inline-flex;
 }
 
-.grid {
-  display: grid;
-}
-
 .hidden {
   display: none;
 }
 
-.aspect-\[16\/9\] {
-  aspect-ratio: 16/9;
-}
-
-.h-10 {
-  height: 2.5rem;
-}
-
 .h-16 {
   height: 4rem;
-}
-
-.h-2 {
-  height: 0.5rem;
-}
-
-.h-4 {
-  height: 1rem;
-}
-
-.h-6 {
-  height: 1.5rem;
 }
 
 .h-8 {
@@ -923,22 +918,6 @@ input[type="radio"]:checked ~ .box .circle background {
   height: 100%;
 }
 
-.w-10 {
-  width: 2.5rem;
-}
-
-.w-2 {
-  width: 0.5rem;
-}
-
-.w-4 {
-  width: 1rem;
-}
-
-.w-6 {
-  width: 1.5rem;
-}
-
 .w-60 {
   width: 15rem;
 }
@@ -963,16 +942,8 @@ input[type="radio"]:checked ~ .box .circle background {
   width: 70px;
 }
 
-.w-\[full\] {
-  width: full;
-}
-
 .w-full {
   width: 100%;
-}
-
-.max-w-6xl {
-  max-width: 72rem;
 }
 
 .max-w-\[250px\] {
@@ -1003,15 +974,6 @@ input[type="radio"]:checked ~ .box .circle background {
   max-width: 100%;
 }
 
-.max-w-\[160px\] {
-  max-width: 160px;
-}
-
-.-translate-x-1\/2 {
-  --tw-translate-x: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .-translate-y-1\/2 {
   --tw-translate-y: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1023,14 +985,6 @@ input[type="radio"]:checked ~ .box .circle background {
 
 .resize-none {
   resize: none;
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.flex-col {
-  flex-direction: column;
 }
 
 .flex-wrap {
@@ -1053,10 +1007,10 @@ input[type="radio"]:checked ~ .box .circle background {
   justify-content: space-between;
 }
 
-.space-x-2 > :not([hidden]) ~ :not([hidden]) {
+.space-x-1 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
-  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+  margin-right: calc(0.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-y-3 > :not([hidden]) ~ :not([hidden]) {
@@ -1075,6 +1029,10 @@ input[type="radio"]:checked ~ .box .circle background {
 
 .rounded-2xl {
   border-radius: 1rem;
+}
+
+.rounded-\[10px\] {
+  border-radius: 10px;
 }
 
 .rounded-\[20px\] {
@@ -1097,17 +1055,17 @@ input[type="radio"]:checked ~ .box .circle background {
   border-radius: 0.375rem;
 }
 
-.rounded-r-2xl {
-  border-top-right-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-}
-
 .rounded-tl-\[80px\] {
   border-top-left-radius: 80px;
 }
 
 .border {
   border-width: 1px;
+}
+
+.border-dark-3 {
+  --tw-border-opacity: 1;
+  border-color: rgb(55 65 81 / var(--tw-border-opacity, 1));
 }
 
 .border-primary {
@@ -1124,11 +1082,6 @@ input[type="radio"]:checked ~ .box .circle background {
   border-color: transparent;
 }
 
-.border-dark-3 {
-  --tw-border-opacity: 1;
-  border-color: rgb(55 65 81 / var(--tw-border-opacity, 1));
-}
-
 .bg-body-color {
   --tw-bg-opacity: 1;
   background-color: rgb(99 115 129 / var(--tw-bg-opacity, 1));
@@ -1137,6 +1090,11 @@ input[type="radio"]:checked ~ .box .circle background {
 .bg-dark {
   --tw-bg-opacity: 1;
   background-color: rgb(17 25 40 / var(--tw-bg-opacity, 1));
+}
+
+.bg-dark-2 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 42 55 / var(--tw-bg-opacity, 1));
 }
 
 .bg-primary {
@@ -1153,19 +1111,6 @@ input[type="radio"]:checked ~ .box .circle background {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
-.bg-white\/20 {
-  background-color: rgb(255 255 255 / 0.2);
-}
-
-.bg-white\/50 {
-  background-color: rgb(255 255 255 / 0.5);
-}
-
-.bg-dark-2 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(31 42 55 / var(--tw-bg-opacity, 1));
-}
-
 .fill-current {
   fill: currentColor;
 }
@@ -1175,17 +1120,8 @@ input[type="radio"]:checked ~ .box .circle background {
      object-fit: contain;
 }
 
-.object-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .p-10 {
   padding: 2.5rem;
-}
-
-.p-20 {
-  padding: 5rem;
 }
 
 .p-3 {
@@ -1206,6 +1142,11 @@ input[type="radio"]:checked ~ .box .circle background {
   padding-right: 1rem;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -1221,19 +1162,9 @@ input[type="radio"]:checked ~ .box .circle background {
   padding-right: 14px;
 }
 
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-}
-
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
 }
 
 .py-3 {
@@ -1251,14 +1182,19 @@ input[type="radio"]:checked ~ .box .circle background {
   padding-bottom: 1.25rem;
 }
 
+.py-\[10px\] {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.py-\[34px\] {
+  padding-top: 34px;
+  padding-bottom: 34px;
+}
+
 .py-\[6px\] {
   padding-top: 6px;
   padding-bottom: 6px;
-}
-
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 .pb-12 {
@@ -1352,16 +1288,16 @@ input[type="radio"]:checked ~ .box .circle background {
   line-height: 1.208 !important;
 }
 
+.leading-\[1\.208\] {
+  line-height: 1.208;
+}
+
 .leading-\[1\.2\] {
   line-height: 1.2;
 }
 
 .leading-loose {
   line-height: 2;
-}
-
-.leading-relaxed {
-  line-height: 1.625;
 }
 
 .text-body-color {
@@ -1374,6 +1310,11 @@ input[type="radio"]:checked ~ .box .circle background {
   color: rgb(17 25 40 / var(--tw-text-opacity, 1));
 }
 
+.text-dark-6 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity, 1));
+}
+
 .text-primary {
   --tw-text-opacity: 1;
   color: rgb(55 88 249 / var(--tw-text-opacity, 1));
@@ -1382,11 +1323,6 @@ input[type="radio"]:checked ~ .box .circle background {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.text-dark-6 {
-  --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity, 1));
 }
 
 .shadow {
@@ -1404,6 +1340,12 @@ input[type="radio"]:checked ~ .box .circle background {
 .shadow-lg {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-portfolio {
+  --tw-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
+  --tw-shadow-colored: 0px 4px 30px 0px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -1435,18 +1377,6 @@ input[type="radio"]:checked ~ .box .circle background {
   transition-duration: 150ms;
 }
 
-.transition-colors {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.transition-opacity {
-  transition-property: opacity;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .hover\:border-primary:hover {
   --tw-border-opacity: 1;
   border-color: rgb(55 88 249 / var(--tw-border-opacity, 1));
@@ -1462,10 +1392,6 @@ input[type="radio"]:checked ~ .box .circle background {
   background-color: rgb(55 88 249 / var(--tw-bg-opacity, 1));
 }
 
-.hover\:bg-white\/30:hover {
-  background-color: rgb(255 255 255 / 0.3);
-}
-
 .hover\:bg-opacity-90:hover {
   --tw-bg-opacity: 0.9;
 }
@@ -1478,10 +1404,6 @@ input[type="radio"]:checked ~ .box .circle background {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.hover\:opacity-80:hover {
-  opacity: 0.8;
 }
 
 .hover\:shadow-lg:hover {
@@ -1521,10 +1443,6 @@ input[type="radio"]:checked ~ .box .circle background {
 
   .sm\:w-1\/2 {
     width: 50%;
-  }
-
-  .sm\:w-2\/3 {
-    width: 66.666667%;
   }
 
   .sm\:max-w-\[70px\] {
@@ -1574,9 +1492,9 @@ input[type="radio"]:checked ~ .box .circle background {
     padding-right: 1.75rem;
   }
 
-  .md\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+  .md\:py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
   }
 
   .md\:text-\[40px\] {
@@ -1665,14 +1583,6 @@ input[type="radio"]:checked ~ .box .circle background {
     width: 100%;
   }
 
-  .lg\:w-3\/12 {
-    width: 25%;
-  }
-
-  .lg\:w-2\/12 {
-    width: 16.666667%;
-  }
-
   .lg\:max-w-full {
     max-width: 100%;
   }
@@ -1690,9 +1600,9 @@ input[type="radio"]:checked ~ .box .circle background {
     padding-right: 1.75rem;
   }
 
-  .lg\:py-\[120px\] {
-    padding-top: 120px;
-    padding-bottom: 120px;
+  .lg\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .lg\:pb-20 {
@@ -1721,10 +1631,6 @@ input[type="radio"]:checked ~ .box .circle background {
 
   .lg\:pt-\[150px\] {
     padding-top: 150px;
-  }
-
-  .lg\:pt-\[100px\] {
-    padding-top: 100px;
   }
 
   .lg\:text-right {
@@ -1759,20 +1665,16 @@ input[type="radio"]:checked ~ .box .circle background {
     width: 50%;
   }
 
+  .xl\:w-1\/3 {
+    width: 33.333333%;
+  }
+
   .xl\:w-5\/12 {
     width: 41.666667%;
   }
 
   .xl\:w-6\/12 {
     width: 50%;
-  }
-
-  .xl\:w-2\/12 {
-    width: 16.666667%;
-  }
-
-  .xl\:w-3\/12 {
-    width: 25%;
   }
 
   .xl\:px-10 {
@@ -1791,14 +1693,6 @@ input[type="radio"]:checked ~ .box .circle background {
 }
 
 @media (prefers-color-scheme: dark) {
-  .dark\:block {
-    display: block;
-  }
-
-  .dark\:hidden {
-    display: none;
-  }
-
   .dark\:border-dark-3 {
     --tw-border-opacity: 1;
     border-color: rgb(55 65 81 / var(--tw-border-opacity, 1));
@@ -1829,17 +1723,10 @@ input[type="radio"]:checked ~ .box .circle background {
     color: rgb(255 255 255 / var(--tw-text-opacity, 1));
   }
 
-  .dark\:hover\:border-primary:hover {
-    --tw-border-opacity: 1;
-    border-color: rgb(55 88 249 / var(--tw-border-opacity, 1));
-  }
-}
-
-@media (min-width: 960px) {
-  @media (prefers-color-scheme: dark) {
-    .lg\:dark\:bg-transparent {
-      background-color: transparent;
-    }
+  .dark\:shadow-box-dark {
+    --tw-shadow: 0px 10px 15px 0px rgba(5, 13, 29, 0.18);
+    --tw-shadow-colored: 0px 10px 15px 0px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 }
 
