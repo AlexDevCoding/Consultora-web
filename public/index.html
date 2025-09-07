@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./assets/styles/output.css" />
-<link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon">
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet" />
@@ -156,21 +156,25 @@
     <!-- ====== Services Section Start -->
     <section id="Servicios" class=" pb-12 ] lg:pb-[90px] bg-dark">
       <div class="container mx-auto">
-        <div  class="-mx-4 flex flex-wrap">
+        <div class="-mx-4 flex flex-wrap">
           <div class="w-full px-4">
-             <div class="mx-auto max-w-[510px] text-center">
+            <div class="mx-auto max-w-[510px] text-center">
               <span class="text-primary mb-2 block text-lg font-semibold">
                 ¿Que Ofrecemos?
               </span>
-                <h2 class="text-4xl font-bold mb-4 text-white">  Nuestros Servicios</h2>
-             </div>
-             <div> <p class="text-muted-foreground text-center mb-6 text-dark-6">
-              En BlueCode, nos comprometemos a mantenernos a la vanguardia de las últimas tecnologías para ofrecerte soluciones innovadoras. Nuestro enfoque proactivo garantiza que siempre estés un paso adelante de tu competencia, maximizando tu potencial y mejorando la experiencia de tus clientes.
-            </p></div>
+              <h2 class="text-4xl font-bold mb-4 text-white"> Nuestros Servicios</h2>
+            </div>
+            <div>
+              <p class="text-muted-foreground text-center mb-6 text-dark-6">
+                En BlueCode, nos comprometemos a mantenernos a la vanguardia de las últimas tecnologías para ofrecerte
+                soluciones innovadoras. Nuestro enfoque proactivo garantiza que siempre estés un paso adelante de tu
+                competencia, maximizando tu potencial y mejorando la experiencia de tus clientes.
+              </p>
+            </div>
           </div>
-         
-       </div>
-       
+
+        </div>
+
         <div class="-mx-4 flex flex-wrap">
           <div class="w-full px-4 md:w-1/2 lg:w-1/3">
             <div class="mb-9 rounded-[20px] bg-dark-2 p-10 h-[350px] shadow-2 hover:shadow-lg md:px-7 xl:px-10">
@@ -185,7 +189,8 @@
                 Desarrollo Web Personalizado
               </h4>
               <p class="text-dark-6">
-                Creamos webs a medida, adaptados a tus necesidades, con tecnología de vanguardia para máximo rendimiento y experiencia de usuario.
+                Creamos webs a medida, adaptados a tus necesidades, con tecnología de vanguardia para máximo rendimiento
+                y experiencia de usuario.
               </p>
             </div>
           </div>
@@ -207,7 +212,7 @@
             </div>
           </div>
 
-   
+
 
 
           <div class="w-full px-4 md:w-1/2 lg:w-1/3">
@@ -226,12 +231,13 @@
                 Optimización de Velocidad
               </h4>
               <p class="text-dark-6">
-                Mejoramos la velocidad de carga de tu web, optimizando la experiencia de usuario y el posicionamiento SEO.
+                Mejoramos la velocidad de carga de tu web, optimizando la experiencia de usuario y el posicionamiento
+                SEO.
               </p>
             </div>
           </div>
-          
-          
+
+
         </div>
       </div>
     </section>
@@ -358,250 +364,181 @@
 
 
 
-   <!-- ====== Portfolio Section Start -->
-<section 
-x-data="
+    <!-- ====== Portfolio Section Start -->
+    <section x-data="
 {
 showCards: 'all',
 activeClasses: 'bg-primary text-white',
 inactiveClasses: 'text-dark-6 hover:bg-primary hover:text-white',
 }
-"
-class="pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] bg-dark"
->
-<div  class="container mx-auto">
-   <div id="Portafolio" class="-mx-4 flex flex-wrap">
-      <div class="w-full px-4">
-         <div class="mx-auto max-w-[510px] text-center">
-            <span class="text-primary mb-2 block text-lg font-semibold">
-              Nuestro Portafolio
-            </span>
-            <h2 class="text-4xl font-bold mb-4 text-white">Nuestros Proyectos Recientes</h2>
-         </div>
-         <div> <p class="text-muted-foreground text-center mb-6 text-dark-6">
-          Nuestros proyectos recientes muestran nuestra capacidad para crear soluciones digitales personalizadas,
-          adaptadas a las necesidades específicas de cada cliente, combinando funcionalidad y diseño atractivo.
-        </p></div>
-      </div>
-     
-   </div>
-  
-   <div class="-mx-4 flex flex-wrap">
-      <div
-         :class="showCards == 'all' || showCards == 'branding' ? 'block' : 'hidden' "
-         class="w-full px-4 md:w-1/2 xl:w-1/3"
-         >
-         <div class="relative mb-12">
-            <div class="overflow-hidden rounded-[10px]">
-               <img
-                  src="assets/img/barberia-demo01.netlify.apps (1).jpg"
-                  alt="portfolio"
-                  class="w-full h-[350px]"
-                  loading="lazy" 
-                  />
+" class="pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] bg-dark">
+      <div class="container mx-auto">
+        <div id="Portafolio" class="-mx-4 flex flex-wrap">
+          <div class="w-full px-4">
+            <div class="mx-auto max-w-[510px] text-center">
+              <span class="text-primary mb-2 block text-lg font-semibold">
+                Nuestro Portafolio
+              </span>
+              <h2 class="text-4xl font-bold mb-4 text-white">Nuestros Proyectos Recientes</h2>
             </div>
-            <div
-               class="relative z-10 mx-7 -mt-20 rounded-lg bg-dark-2 py-[34px] px-3 text-center shadow-box-dark"
-               >
-               <span class="text-primary mb-2 block text-sm font-medium">
-                Landing page
-               </span>
-               <h3 class="text-white mb-5 text-xl font-bold">
-                Landing Page para Barbería 
-               </h3>
-               <a
-               target="_blank"
-                  href="https://barberia-demo01.netlify.app/"
-                  class="text-dark-6 hover:border-primary hover:bg-primary inline-block rounded-md border border-stroke py-[10px] px-7 text-sm font-medium transition hover:text-white"
-                  >
-
-              Demo
-
-           
-
-               </a>
+            <div>
+              <p class="text-muted-foreground text-center mb-6 text-dark-6">
+                Nuestros proyectos recientes muestran nuestra capacidad para crear soluciones digitales personalizadas,
+                adaptadas a las necesidades específicas de cada cliente, combinando funcionalidad y diseño atractivo.
+              </p>
             </div>
-         </div>
-      </div>
-      <div
-         :class="showCards == 'all' || showCards == 'marketing' ? 'block' : 'hidden' "
-         class="w-full px-4 md:w-1/2 xl:w-1/3"
-         >
-         <div class="relative mb-12">
-            <div class="overflow-hidden rounded-[10px]">
-               <img
-                  src="assets/img/proyecto1.png"
-                  alt="portfolio"
-                  class="w-full h-[350px]"
-                  loading="lazy" 
-                  />
+          </div>
+
+        </div>
+
+        <div class="-mx-4 flex flex-wrap">
+          <div :class="showCards == 'all' || showCards == 'branding' ? 'block' : 'hidden' "
+            class="w-full px-4 md:w-1/2 xl:w-1/3">
+            <div class="relative mb-12">
+              <div class="overflow-hidden rounded-[10px]">
+                <img src="assets/img/barberia-demo01.netlify.apps (1).webp" alt="portfolio" class="w-full h-[350px]"
+                  loading="lazy" />
+              </div>
+              <div class="relative z-10 mx-7 -mt-20 rounded-lg bg-dark-2 py-[34px] px-3 text-center shadow-box-dark">
+                <span class="text-primary mb-2 block text-sm font-medium">
+                  Landing page
+                </span>
+                <h3 class="text-white mb-5 text-xl font-bold">
+                  Landing Page para Barbería
+                </h3>
+                <a target="_blank" href="https://barberia-demo01.netlify.app/"
+                  class="text-dark-6 hover:border-primary hover:bg-primary inline-block rounded-md border border-stroke py-[10px] px-7 text-sm font-medium transition hover:text-white">
+
+                  Demo
+
+
+
+                </a>
+              </div>
             </div>
-            <div
-               class="relative z-10 mx-7 -mt-20 rounded-lg bg-dark-2 py-[34px] px-3 text-center shadow-box-dark"
-               >
-               <span class="text-primary mb-2 block text-sm font-medium">
-                Ecommerce
-               </span>
-               <h3 class="text-white mb-5 text-xl font-bold">
+          </div>
+          <div :class="showCards == 'all' || showCards == 'marketing' ? 'block' : 'hidden' "
+            class="w-full px-4 md:w-1/2 xl:w-1/3">
+            <div class="relative mb-12">
+              <div class="overflow-hidden rounded-[10px]">
+                <img src="assets/img/proyecto1.webp" alt="portfolio" class="w-full h-[350px]" loading="lazy" />
+              </div>
+              <div class="relative z-10 mx-7 -mt-20 rounded-lg bg-dark-2 py-[34px] px-3 text-center shadow-box-dark">
+                <span class="text-primary mb-2 block text-sm font-medium">
+                  Ecommerce
+                </span>
+                <h3 class="text-white mb-5 text-xl font-bold">
                   Tienda Virtual de Videojuegos
-               </h3>
-               <a
-                  href="javascript:void(0)"
-                  class="text-dark-6 hover:border-primary hover:bg-primary inline-block rounded-md border border-stroke py-[10px] px-7 text-sm font-medium transition hover:text-white"
-                  >
+                </h3>
+                <a href="javascript:void(0)"
+                  class="text-dark-6 hover:border-primary hover:bg-primary inline-block rounded-md border border-stroke py-[10px] px-7 text-sm font-medium transition hover:text-white">
 
-               Demo
+                  Demo
 
-           
 
-               </a>
+
+                </a>
+              </div>
             </div>
-         </div>
-      </div>
-      <div
-         :class="showCards == 'all' || showCards == 'development' ? 'block' : 'hidden' "
-         class="w-full px-4 md:w-1/2 xl:w-1/3"
-         >
-         <div class="relative mb-12">
-            <div class="overflow-hidden rounded-[10px]">
-               <img
-                  src="assets/img/Reserva.png"
-                  alt="portfolio"
-                  class="w-full h-[350px]"
-                  loading="lazy" 
-                  />
-            </div>
-            <div
-               class="relative z-10 mx-7 -mt-20 rounded-lg bg-dark-2 py-[34px] px-3 text-center shadow-box-dark"
-               >
-               <span class="text-primary mb-2 block text-sm font-medium">
-                Sistema de Reservas
-               </span>
-               <h3 class="text-white mb-5 text-xl font-bold">
-                Sistema de Reservas Deportivas
-               </h3>
-               <a
-               target="_blank"
-                  href="https://demo-menu-three.vercel.app/"
-                  class="text-dark-6 hover:border-primary hover:bg-primary inline-block rounded-md border border-stroke py-[10px] px-7 text-sm font-medium transition hover:text-white"
-                  >
+          </div>
+          <div :class="showCards == 'all' || showCards == 'development' ? 'block' : 'hidden' "
+            class="w-full px-4 md:w-1/2 xl:w-1/3">
+            <div class="relative mb-12">
+              <div class="overflow-hidden rounded-[10px]">
+                <img src="assets/img/Reserva.webp" alt="portfolio" class="w-full h-[350px]" loading="lazy" />
+              </div>
+              <div class="relative z-10 mx-7 -mt-20 rounded-lg bg-dark-2 py-[34px] px-3 text-center shadow-box-dark">
+                <span class="text-primary mb-2 block text-sm font-medium">
+                  Sistema de Reservas
+                </span>
+                <h3 class="text-white mb-5 text-xl font-bold">
+                  Sistema de Reservas Deportivas
+                </h3>
+                <a target="_blank" href="https://demo-menu-three.vercel.app/"
+                  class="text-dark-6 hover:border-primary hover:bg-primary inline-block rounded-md border border-stroke py-[10px] px-7 text-sm font-medium transition hover:text-white">
 
-               Demo
+                  Demo
 
-           
 
-               </a>
+
+                </a>
+              </div>
             </div>
-         </div>
-      </div>
-      <div
-         :class="showCards == 'all' || showCards == 'design' ? 'block' : 'hidden' "
-         class="w-full px-4 md:w-1/2 xl:w-1/3"
-         >
-         <div class="relative mb-12">
-            <div class="overflow-hidden rounded-[10px]">
-               <img
-                  src="assets/img/tablero.png"
-                  alt="portfolio"
-                  class="w-full h-[350px]"
-                  loading="lazy" 
-                  />
-            </div>
-            <div
-               class="relative z-10 mx-7 -mt-20 rounded-lg bg-dark-2 py-[34px] px-3 text-center shadow-box-dark"
-               >
-               <span class="text-primary mb-2 block text-sm font-medium">
-               Sistema de gestión
-               </span>
-               <h3 class="text-white mb-5 text-xl font-bold">
+          </div>
+          <div :class="showCards == 'all' || showCards == 'design' ? 'block' : 'hidden' "
+            class="w-full px-4 md:w-1/2 xl:w-1/3">
+            <div class="relative mb-12">
+              <div class="overflow-hidden rounded-[10px]">
+                <img src="assets/img/tablero.webp" alt="portfolio" class="w-full h-[350px]" loading="lazy" />
+              </div>
+              <div class="relative z-10 mx-7 -mt-20 rounded-lg bg-dark-2 py-[34px] px-3 text-center shadow-box-dark">
+                <span class="text-primary mb-2 block text-sm font-medium">
+                  Sistema de gestión
+                </span>
+                <h3 class="text-white mb-5 text-xl font-bold">
                   Sistema para la gestión de empleados
-               </h3>
-               <a
-                  href="javascript:void(0)"
-                  class="text-dark-6 hover:border-primary hover:bg-primary inline-block rounded-md border border-stroke py-[10px] px-7 text-sm font-medium transition hover:text-white"
-                  >
+                </h3>
+                <a href="javascript:void(0)"
+                  class="text-dark-6 hover:border-primary hover:bg-primary inline-block rounded-md border border-stroke py-[10px] px-7 text-sm font-medium transition hover:text-white">
 
-            Demo
+                  Demo
 
 
-               </a>
+                </a>
+              </div>
             </div>
-         </div>
+          </div>
+          <div :class="showCards == 'all' || showCards == 'marketing' ? 'block' : 'hidden' "
+            class="w-full px-4 md:w-1/2 xl:w-1/3">
+            <div class="relative mb-12">
+              <div class="overflow-hidden rounded-[10px]">
+                <img src="assets/img/das.webp" alt="portfolio" class="w-full h-[350px]" loading="lazy" />
+              </div>
+              <div class="relative z-10 mx-7 -mt-20 rounded-lg bg-dark-2 py-[34px] px-3 text-center shadow-box-dark">
+                <span class="text-primary mb-2 block text-sm font-medium">
+                  Sitio web de restaurante
+                </span>
+                <h3 class="text-white mb-5 text-xl font-bold">
+                  Menu digital
+                </h3>
+                <a target="_blank" href="https://demo-menu-three.vercel.app/"
+                  class="text-dark-6 hover:border-primary hover:bg-primary inline-block rounded-md border border-stroke py-[10px] px-7 text-sm font-medium transition hover:text-white">
+
+                  Demo </a>
+
+
+                </a>
+
+              </div>
+            </div>
+          </div>
+          <div :class="showCards == 'all' || showCards == 'branding' ? 'block' : 'hidden' "
+            class="w-full px-4 md:w-1/2 xl:w-1/3">
+            <div class="relative mb-12">
+              <div class="overflow-hidden rounded-[10px]">
+                <img src="assets/img/menbresia.webp" alt="portfolio" class="w-full h-[350px]" loading="lazy" />
+              </div>
+              <div class="relative z-10 mx-7 -mt-20 rounded-lg bg-dark-2 py-[34px] px-3 text-center shadow-box-dark">
+                <span class="text-primary mb-2 block text-sm font-medium">
+                  Sitios web de membresía
+                </span>
+                <h3 class="text-white mb-5 text-xl font-bold">
+                  sitio web de membresía
+                </h3>
+                <a target="_blank" href="https://techsupport-manager.netlify.app/"
+                  class="text-dark-6 hover:border-primary hover:bg-primary inline-block rounded-md border border-stroke py-[10px] px-7 text-sm font-medium transition hover:text-white">
+
+                  Demo
+
+
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div
-         :class="showCards == 'all' || showCards == 'marketing' ? 'block' : 'hidden' "
-         class="w-full px-4 md:w-1/2 xl:w-1/3"
-         >
-         <div class="relative mb-12">
-            <div class="overflow-hidden rounded-[10px]">
-               <img
-                  src="assets/img/das.png"
-                  alt="portfolio"
-                  class="w-full h-[350px]"
-                  loading="lazy" 
-                  />
-            </div>
-            <div
-               class="relative z-10 mx-7 -mt-20 rounded-lg bg-dark-2 py-[34px] px-3 text-center shadow-box-dark"
-               >
-               <span class="text-primary mb-2 block text-sm font-medium">
-                Sitio web de restaurante 
-               </span>
-               <h3 class="text-white mb-5 text-xl font-bold">
-                  Menu digital 
-               </h3>
-               <a
-               target="_blank"
-               href="https://demo-menu-three.vercel.app/"
-               class="text-dark-6 hover:border-primary hover:bg-primary inline-block rounded-md border border-stroke py-[10px] px-7 text-sm font-medium transition hover:text-white"
-                  >
-
-Demo               </a>
-
-             
-               </a>
-
-            </div>
-         </div>
-      </div>
-      <div
-         :class="showCards == 'all' || showCards == 'branding' ? 'block' : 'hidden' "
-         class="w-full px-4 md:w-1/2 xl:w-1/3"
-         >
-         <div class="relative mb-12">
-            <div class="overflow-hidden rounded-[10px]">
-               <img
-               src="assets/img/menbresia.png"
-               class="w-full h-[350px]"
-               loading="lazy" 
-                  />
-            </div>
-            <div
-               class="relative z-10 mx-7 -mt-20 rounded-lg bg-dark-2 py-[34px] px-3 text-center shadow-box-dark"
-               >
-               <span class="text-primary mb-2 block text-sm font-medium">
-                Sitios web de membresía
-               </span>
-               <h3 class="text-white mb-5 text-xl font-bold">
-                sieto web de membresía
-               </h3>
-               <a
-               target="_blank"
-                  href="https://techsupport-manager.netlify.app/"
-                  class="text-dark-6 hover:border-primary hover:bg-primary inline-block rounded-md border border-stroke py-[10px] px-7 text-sm font-medium transition hover:text-white"
-                  >
-
-               Demo
-
-
-               </a>
-            </div>
-         </div>
-      </div>
-   </div>
-</div>
-</section>
-<!-- ====== Portfolio Section End -->
+    </section>
+    <!-- ====== Portfolio Section End -->
 
 
     <!-- ====== Contact Section Start -->
@@ -613,8 +550,7 @@ Demo               </a>
               <span class="block mb-4 text-base font-semibold text-primary">
                 Contáctanos
               </span>
-              <h2
-                class="text-white mb-6 text-[32px] font-bold uppercase sm:text-[40px] lg:text-[36px] xl:text-[40px]">
+              <h2 class="text-white mb-6 text-[32px] font-bold uppercase sm:text-[40px] lg:text-[36px] xl:text-[40px]">
                 PONTE EN CONTACTO
               </h2>
               <p class="text-dark-6 mb-9">
@@ -622,8 +558,8 @@ Demo               </a>
                 para ayudarte a crear sitios web impresionantes y funcionales que se adapten a tus necesidades. ¡No
                 dudes en contactarnos!
               </p>
-          
-            
+
+
 
               <div class="mb-8 flex w-full max-w-[370px]">
                 <div
@@ -647,30 +583,31 @@ Demo               </a>
           </div>
           <div class="w-full px-4 lg:w-1/2 xl:w-5/12">
             <div class="relative p-8 bg-dark-2 rounded-lg shadow-lg sm:p-12">
-              <form>
+              <form action="https://formspree.io/f/xpwjkpgn" method="POST">
                 <div class="mb-6">
-                  <input type="text" placeholder="Nombre"
+                  <input type="text" name="nombre" placeholder="Nombre"
                     class="border-dark-3 text-dark-6 bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none" />
                 </div>
                 <div class="mb-6">
-                  <input type="email" placeholder="Correo"
+                  <input type="email" name="email" placeholder="Correo"
                     class="border-dark-3 text-dark-6 bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none" />
                 </div>
                 <div class="mb-6">
-                  <input type="text" placeholder="Teléfono"
+                  <input type="text" name="telefono" placeholder="Teléfono"
                     class="border-dark-3 text-dark-6 bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none" />
                 </div>
                 <div class="mb-6">
-                  <textarea rows="6" placeholder="Mensaje"
+                  <textarea rows="6" name="mensaje" placeholder="Mensaje"
                     class="border-dark-3 text-dark-6 bg-dark text-body-color focus:border-primary w-full resize-none rounded border py-3 px-[14px] text-base outline-none"></textarea>
                 </div>
                 <div>
                   <button type="submit"
                     class="w-full p-3 text-white transition border rounded border-primary bg-primary hover:bg-opacity-90">
-                    Enviar Mensajes
+                    Enviar Mensaje
                   </button>
                 </div>
               </form>
+
               <div>
                 <span class="absolute -top-10 -right-9 z-[-1]">
                   <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -918,15 +855,12 @@ Demo               </a>
                   </a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)" class="inline-block text-base leading-loose text-dark-6 hover:text-primary">
+                  <a href="javascript:void(0)"
+                    class="inline-block text-base leading-loose text-dark-6 hover:text-primary">
                     Historias de éxito
                   </a>
                 </li>
-                <li>
-                  <a href="javascript:void(0)" class="inline-block text-base leading-loose text-dark-6 hover:text-primary">
-                    Setting & Privacy
-                  </a>
-                </li>
+
               </ul>
             </div>
           </div>
@@ -935,7 +869,7 @@ Demo               </a>
             <div class="w-full mb-10">
               <h4 class="text-lg font-semibold text-white mb-9">
                 Siguenos en
-                            </h4>
+              </h4>
               <div class="flex items-center mb-6">
                 <a href="https://web.facebook.com/profile.php?id=61565644435282"
                   class="flex items-center justify-center w-8 h-8 mr-3 border rounded-full text-white hover:border-primary hover:bg-primary border-dark-3 hover:text-white sm:mr-4 lg:mr-3 xl:mr-4">
